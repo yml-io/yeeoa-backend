@@ -1,0 +1,1 @@
+D:\IntelliJIDEAWorkSpace\yeeoa\src\main\java\META-INF\MANIFEST.MF 的内容确保要和 idea中 build-》artifact-》build之后， yeeoa的jar包中的yeeoa文件压缩中的 对应文件内容一样，否则会出现 找不到第三方类包的错误
