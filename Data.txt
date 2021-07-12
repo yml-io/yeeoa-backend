@@ -1,0 +1,120 @@
+https://xd-adobe.com/view/b2181ec8-2a93-444a-7401-deb8ccdc9c9e-c429
+
+
+
+
+program
+=======================
+id
+create time
+enabled
+
+name
+owner
+image_url
+grade
+semester
+objectives	----------------- 设置 text 类型可以表示多个 objective
+status
+
+
+
+unit
+======================
+id
+create time
+enabled
+
+
+program_id      -------------- forein refenrece program
+label
+name
+shared_problem_with_solving
+objectives
+status
+
+asset
+========================
+id
+create time
+enabled
+
+unit_id  -------------------------------- forein refenrece unit_id
+type
+comment
+name
+
+
+
+
+process      课程结构   代表一个课程集合，可能来自不同的unit
+============================
+id
+create time
+enabled
+
+unit_id  -------------------------------- forein refenrece unit_id
+name
+objective
+status
+
+
+
+
+process_lesson         一个课程会有多个process
+=================================
+process_id    		------------------------foreign refences process_id
+lesson_id    		------------------------foreign refences lesson_id
+status
+
+
+
+lesson
+=============================
+id
+create time
+enabled
+
+unit_id			----------------- foreign refences unit_id   not null
+user_id                 ------------------foreign refrence user_id
+lesson_no
+title
+timelength
+focus
+imperatives
+status			------------------  completed, imcomplete, pending
+
+
+
+
+
+
+task
+========================
+id
+create time
+enabled
+
+lesson_id			----------------- foreign refences unit_id
+task_id
+task_title
+status
+
+
+
+step
+=========================
+id
+create time
+enabled
+
+
+task_id			----------------- foreign refences task_id
+step_id
+estimated times
+step_actions
+step_details
+display_page
+page
+table_resource
+status
